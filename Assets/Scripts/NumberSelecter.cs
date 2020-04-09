@@ -35,12 +35,18 @@ public class NumberSelecter : MonoBehaviour
         
     }
 
-    public void OnNumberClick(Image thisButton)
+    public void OnNumberClick(GameObject thisButton)
     {
         rowOneButton.color = new Color(rowOneRed, rowOneGreen, rowOneBlue, hideAlpha);
         rowTwoButton.color = new Color(rowTwoRed, rowTwoGreen, rowTwoBlue, hideAlpha);
         rowThreeButton.color = new Color(rowThreeRed, rowThreeGreen, rowThreeBlue, hideAlpha);
 
-        thisButton.color = new Color(thisButton.color.r, thisButton.color.g, thisButton.color.b, displayAlpha);
+        Image thisImage = thisButton.GetComponent<Image>();
+        thisImage.color = new Color(thisImage.color.r, thisImage.color.g, thisImage.color.b, displayAlpha);
+
+        Culclator culclator = new Culclator();
+        //Debug.Log("計算開始");
+        culclator.Culclate(thisButton);
+        //Debug.Log("計算終了");
     }
 }
