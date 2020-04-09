@@ -44,8 +44,8 @@ public class NumberSelecter : MonoBehaviour
         Image thisImage = thisButton.GetComponent<Image>();
         thisImage.color = new Color(thisImage.color.r, thisImage.color.g, thisImage.color.b, displayAlpha);
 
+        //Debug.Log("計算開始")
         Culclator culclator = new Culclator();
-        //Debug.Log("計算開始");
         culclator.Culclate(thisButton);
         //Debug.Log("計算終了");
     }
