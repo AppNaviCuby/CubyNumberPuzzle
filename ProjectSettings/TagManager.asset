@@ -8,6 +8,7 @@ TagManager:
   - minus
   - divid
   - multipl
+  - Line
   layers:
   - Default
   - TransparentFX

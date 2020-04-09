@@ -764,7 +764,7 @@ GameObject:
   - component: {fileID: 9140600017922251222}
   m_Layer: 5
   m_Name: Line6
-  m_TagString: Untagged
+  m_TagString: Line
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1101,7 +1101,7 @@ GameObject:
   - component: {fileID: 9140600018124778655}
   m_Layer: 5
   m_Name: Line3
-  m_TagString: Untagged
+  m_TagString: Line
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2934,7 +2934,7 @@ GameObject:
   - component: {fileID: 9140600018577601283}
   - component: {fileID: 9140600018577601282}
   m_Layer: 5
-  m_Name: Stage
+  m_Name: StageSample
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3433,7 +3433,7 @@ GameObject:
   - component: {fileID: 9140600018805462229}
   m_Layer: 5
   m_Name: Line5
-  m_TagString: Untagged
+  m_TagString: Line
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4906,7 +4906,7 @@ GameObject:
   - component: {fileID: 9140600019113644816}
   m_Layer: 5
   m_Name: Line2
-  m_TagString: Untagged
+  m_TagString: Line
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4983,7 +4983,7 @@ GameObject:
   - component: {fileID: 9140600019113949734}
   m_Layer: 5
   m_Name: Line1
-  m_TagString: Untagged
+  m_TagString: Line
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5835,7 +5835,7 @@ GameObject:
   - component: {fileID: 9140600019455692846}
   m_Layer: 5
   m_Name: Line4
-  m_TagString: Untagged
+  m_TagString: Line
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6249,7 +6249,7 @@ GameObject:
   - component: {fileID: 9140600019600092001}
   m_Layer: 5
   m_Name: Line7
-  m_TagString: Untagged
+  m_TagString: Line
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
