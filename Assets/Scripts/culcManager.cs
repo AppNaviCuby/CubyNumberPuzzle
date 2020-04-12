@@ -2,22 +2,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Text.RegularExpressions;
 
-public class culcManager : MonoBehaviour
+public class CulcManager : MonoBehaviour
 {
-    public List<GameObject> panelList = new List<GameObject>();
-
     // Start is called before the first frame update
+    public List<GameObject> panelList = new List<GameObject>();
+    public int listLongth;
     void Start()
-    {       
+    {
         for(int i=0;i<7;i++)
         {
             panelList.Add(GameObject.FindGameObjectsWithTag("Line")[i]);
-            panelList[i].transform.Find("Row1").gameObject.GetComponent<Button>().enabled = false;
-            panelList[i].transform.Find("Row2").gameObject.GetComponent<Button>().enabled = false;
-            panelList[i].transform.Find("Row3").gameObject.GetComponent<Button>().enabled = false;
-            //Debug.Log(panelList[i]);
-            //Debug.Log(i +"回目");
+            for(int j=1;j<4;j++)
+            {
+            panelList[i].transform.Find("Row" +j).gameObject.GetComponent<Button>().enabled = false;
+            }
+        }
+        listLongth = panelList.Count;
+        Debug.Log(listLongth);
+        for(int j=1;j<4;j++)
+        {
+        panelList[listLongth-1].transform.Find("Row" +j).gameObject.GetComponent<Button>().enabled = true;
         }
     }
 
@@ -25,5 +31,21 @@ public class culcManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void OnButtonClick(GameObject thisButton)
+    {
+        //押したButtonの親のLineの数値を取得
+        int thisLine = int.Parse(Regex.Replace(thisButton.transform.parent.gameObject.name, @"[^0-9]", ""));
+
+        //押した段のbuttonをオフに次の段のbuttonをオンに
+        for(int j=1;j<4;j++)
+        {
+        panelList[thisLine -1].transform.Find("Row" +j).gameObject.GetComponent<Button>().enabled = false;
+        }
+        for(int j=1;j<4;j++)
+        {
+        panelList[thisLine -2].transform.Find("Row" +j).gameObject.GetComponent<Button>().enabled = true;
+        }
     }
 }
