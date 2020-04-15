@@ -421,7 +421,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 302228858}
   m_Enabled: 1
-<
+
 --- !u!1 &536609162
 GameObject:
   m_ObjectHideFlags: 0
