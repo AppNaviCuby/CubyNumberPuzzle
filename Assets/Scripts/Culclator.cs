@@ -6,13 +6,12 @@ using UnityEngine.UI;
 public class Culclator : MonoBehaviour
 {
     public Text resultNumber,startNumber,goalNumber;
-    int culcNumber = 0;
+    int culcNumber ;
 
     // Start is called before the first frame update
     void Start()
     {
         resultNumber.text = startNumber.text;
-        culcNumber = int.Parse(resultNumber.text);
     }
 
     // Update is called once per frame
@@ -26,6 +25,7 @@ public class Culclator : MonoBehaviour
         //Debug.Log(symbol.transform.Find("Number").gameObject.GetComponent<Text>().text);
 
         int thisStartNumber = int.Parse(GameObject.Find("StartNumber").gameObject.GetComponent<Text>().text);
+        int culcNumber = int.Parse(GameObject.Find("ResultNumber").gameObject.GetComponent<Text>().text);
         //Debug.Log(thisStartNumber);
         //Debug.Log("タグ判別");
 
