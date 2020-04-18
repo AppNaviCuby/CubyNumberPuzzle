@@ -861,6 +861,11 @@ PrefabInstance:
       propertyPath: resultNumber
       value: 
       objectReference: {fileID: 542431238}
+    - target: {fileID: 4867294655649522538, guid: ab5332f47f08f446d98935cb1c72153d,
+        type: 3}
+      propertyPath: startNumber
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4867294656379243415, guid: ab5332f47f08f446d98935cb1c72153d,
         type: 3}
       propertyPath: m_Name
