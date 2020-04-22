@@ -7,6 +7,7 @@ using System.Text.RegularExpressions;
 public class CulcManager : MonoBehaviour
 {
     // Start is called before the first frame update
+    public GameObject congra;
     public List<GameObject> panelList = new List<GameObject>();
     public Text resultNumber,startNumber,goalNumber;
     public int listLongth, thisLine;
@@ -38,7 +39,10 @@ public class CulcManager : MonoBehaviour
         for(int j=1;j<4;j++)
         {
             panelList[listLongth-1].transform.Find("Row" +j).gameObject.GetComponent<Button>().enabled = true;
-        }
+            panelList[listLongth - 1].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
+            panelList[listLongth-1].transform.Find("Now").gameObject.SetActive(true);
+        }        
+
         culcNumber = float.Parse(startNumber.text);
     }
 
@@ -63,21 +67,26 @@ public class CulcManager : MonoBehaviour
             //押した段のbuttonをオフに次の段のbuttonをオンに
             for(int j=1;j<4;j++)
             {
+                panelList[thisLine - 1].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, 0.3f);
                 panelList[thisLine -1].transform.Find("Row" +j).gameObject.GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, 0.3f);
                 thisButton.GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
                 panelList[thisLine -1].transform.Find("Row" +j).gameObject.GetComponent<Button>().enabled = false;
+                panelList[thisLine - 1].transform.Find("Now").gameObject.SetActive(false);
             }
             if(thisLine > (7 - listLongth) / 2 + 1)
             {
                 for(int j=1;j<4;j++)
                 {
                     panelList[thisLine -2].transform.Find("Row" +j).gameObject.GetComponent<Button>().enabled = true;
+                    panelList[thisLine - 2].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
+                    panelList[thisLine-2].transform.Find("Now").gameObject.SetActive(true);
                 }
             }else
             {
                 //最上段を押した時、resultとgoalが一致していたらお祝い
                 if(resultNumber.text == goalNumber.text)
                 {
+                    congra.SetActive(true);
                     Debug.Log("Congratulations!!");
                 }
             }
@@ -91,14 +100,18 @@ public class CulcManager : MonoBehaviour
         {
             for(int j=1;j<4;j++)
             { 
+                panelList[i].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, 0.3f);
                 panelList[i].transform.Find("Row" +j).gameObject.GetComponent<Button>().enabled = true;
                 panelList[i].transform.Find("Row" +j).gameObject.GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, 0.3f);
                 panelList[i].transform.Find("Row" +j).gameObject.GetComponent<Button>().enabled = false;
+                panelList[i].transform.Find("Now").gameObject.SetActive(false);
             }
         }
         for(int j=1;j<4;j++)
         {
             panelList[listLongth-1].transform.Find("Row" +j).gameObject.GetComponent<Button>().enabled = true;
+            panelList[listLongth - 1].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
+            panelList[listLongth-1].transform.Find("Now").gameObject.SetActive(true);
         }
 
         //計算を全てなかったことにしてstartNumberに戻す
@@ -114,11 +127,15 @@ public class CulcManager : MonoBehaviour
             //今onの段をoffにその一つ下の段をonに
             for(int j=1;j<4;j++)
                 { 
+                    panelList[thisLine - 2].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, 0.3f);
                     panelList[thisLine - 2].transform.Find("Row" +j).gameObject.GetComponent<Button>().enabled = true;
                     panelList[thisLine - 2].transform.Find("Row" +j).gameObject.GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, 0.3f);
                     panelList[thisLine - 2].transform.Find("Row" +j).gameObject.GetComponent<Button>().enabled = false;
+                    panelList[thisLine - 2].transform.Find("Now").gameObject.SetActive(false);
 
                     panelList[thisLine - 1].transform.Find("Row" +j).gameObject.GetComponent<Button>().enabled = true;
+                    panelList[thisLine - 1].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
+                    panelList[thisLine - 1].transform.Find("Now").gameObject.SetActive(true);
                     
                     //3つのボタンのうち、選ばれていたもので逆計算する
                     float downColorA = panelList[thisLine - 1].transform.Find("Row" +j).gameObject.GetComponent<Image>().color.a;
