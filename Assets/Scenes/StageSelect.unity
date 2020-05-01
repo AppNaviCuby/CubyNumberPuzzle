@@ -438,8 +438,33 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
+<<<<<<< Updated upstream
     - target: {fileID: 3265618144064291327, guid: 5979957e86be5c14e998bd4a94b66235,
         type: 3}
+=======
+    - target: {fileID: 3265618142626284891, guid: 5979957e86be5c14e998bd4a94b66235,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 524640712}
+    - target: {fileID: 3265618144052040938, guid: 5979957e86be5c14e998bd4a94b66235,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3265618144052040940, guid: 5979957e86be5c14e998bd4a94b66235,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 524640712}
+    - target: {fileID: 3265618144064291327, guid: 5979957e86be5c14e998bd4a94b66235,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 524640711}
+    - target: {fileID: 3265618144064291327, guid: 5979957e86be5c14e998bd4a94b66235,
+        type: 3}
+>>>>>>> Stashed changes
       propertyPath: m_Interactable
       value: 1
       objectReference: {fileID: 0}
