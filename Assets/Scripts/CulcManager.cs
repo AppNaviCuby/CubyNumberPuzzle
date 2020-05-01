@@ -128,11 +128,14 @@ public class CulcManager : MonoBehaviour
             //今onの段をoffにその一つ下の段をonに
             for (int j = 1; j < 4; j++)
             {
-                panelList[thisLine - 2].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, 0.3f);
-                panelList[thisLine - 2].transform.Find("Row" + j).gameObject.GetComponent<Button>().enabled = true;
-                panelList[thisLine - 2].transform.Find("Row" + j).gameObject.GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, 0.3f);
-                panelList[thisLine - 2].transform.Find("Row" + j).gameObject.GetComponent<Button>().enabled = false;
-                panelList[thisLine - 2].transform.Find("Now").gameObject.SetActive(false);
+                if(thisLine > 1)
+                {
+                    panelList[thisLine - 2].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, 0.3f);
+                    panelList[thisLine - 2].transform.Find("Row" + j).gameObject.GetComponent<Button>().enabled = true;
+                    panelList[thisLine - 2].transform.Find("Row" + j).gameObject.GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, 0.3f);
+                    panelList[thisLine - 2].transform.Find("Row" + j).gameObject.GetComponent<Button>().enabled = false;
+                    panelList[thisLine - 2].transform.Find("Now").gameObject.SetActive(false);
+                }
 
                 panelList[thisLine - 1].transform.Find("Row" + j).gameObject.GetComponent<Button>().enabled = true;
                 panelList[thisLine - 1].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
