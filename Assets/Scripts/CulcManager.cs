@@ -40,7 +40,7 @@ public class CulcManager : MonoBehaviour
         {
             panelList[listLongth - 1].transform.Find("Row" + j).gameObject.GetComponent<Button>().enabled = true;
             panelList[listLongth - 1].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
-            panelList[listLongth - 1].transform.Find("Now").gameObject.SetActive(true);
+            //panelList[listLongth - 1].transform.Find("Now").gameObject.SetActive(true);
         }
 
         culcNumber = float.Parse(startNumber.text);
@@ -71,7 +71,7 @@ public class CulcManager : MonoBehaviour
                 panelList[thisLine - 1].transform.Find("Row" + j).gameObject.GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, 0.3f);
                 thisButton.GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
                 panelList[thisLine - 1].transform.Find("Row" + j).gameObject.GetComponent<Button>().enabled = false;
-                panelList[thisLine - 1].transform.Find("Now").gameObject.SetActive(false);
+                //panelList[thisLine - 1].transform.Find("Now").gameObject.SetActive(false);
             }
             if (thisLine > (7 - listLongth) / 2 + 1)
             {
@@ -79,7 +79,7 @@ public class CulcManager : MonoBehaviour
                 {
                     panelList[thisLine - 2].transform.Find("Row" + j).gameObject.GetComponent<Button>().enabled = true;
                     panelList[thisLine - 2].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
-                    panelList[thisLine - 2].transform.Find("Now").gameObject.SetActive(true);
+                    //panelList[thisLine - 2].transform.Find("Now").gameObject.SetActive(true);
                 }
             }
             else
