@@ -205,11 +205,19 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< Updated upstream
   - component: {fileID: 123364069}
   - component: {fileID: 123364071}
   - component: {fileID: 123364070}
   m_Layer: 5
   m_Name: title (1)
+=======
+  - component: {fileID: 924667707}
+  - component: {fileID: 924667706}
+  - component: {fileID: 924667708}
+  m_Layer: 0
+  m_Name: StageController
+>>>>>>> Stashed changes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -272,9 +280,33 @@ CanvasRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_GameObject: {fileID: 123364068}
   m_CullTransparentMesh: 0
 --- !u!1 &152091237
+=======
+  m_GameObject: {fileID: 924667705}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 155.24455, y: 238.03548, z: -1827.35}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &924667708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924667705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f214b7e05150cf45981e24c2704cfe7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1533072313
+>>>>>>> Stashed changes
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -358,7 +390,71 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1606791517}
     m_Modifications:
+<<<<<<< Updated upstream
     - target: {fileID: 7501872271557595446, guid: 0f2edb515cfa61f479eedea2dec5f01e,
+=======
+    - target: {fileID: 3265618142626284891, guid: 5979957e86be5c14e998bd4a94b66235,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 524640712}
+    - target: {fileID: 3265618142626284892, guid: 5979957e86be5c14e998bd4a94b66235,
+        type: 3}
+      propertyPath: m_PreserveAspect
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3265618144052040938, guid: 5979957e86be5c14e998bd4a94b66235,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3265618144052040940, guid: 5979957e86be5c14e998bd4a94b66235,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 524640712}
+    - target: {fileID: 3265618144064291200, guid: 5979957e86be5c14e998bd4a94b66235,
+        type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3265618144064291200, guid: 5979957e86be5c14e998bd4a94b66235,
+        type: 3}
+      propertyPath: m_PreserveAspect
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3265618144064291327, guid: 5979957e86be5c14e998bd4a94b66235,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 524640711}
+    - target: {fileID: 3265618144064291327, guid: 5979957e86be5c14e998bd4a94b66235,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Onclick
+      objectReference: {fileID: 0}
+    - target: {fileID: 3265618144064291327, guid: 5979957e86be5c14e998bd4a94b66235,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3265618144064291327, guid: 5979957e86be5c14e998bd4a94b66235,
+        type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3265618144073924152, guid: 5979957e86be5c14e998bd4a94b66235,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 524640712}
+    - target: {fileID: 3265618144445924112, guid: 5979957e86be5c14e998bd4a94b66235,
+        type: 3}
+      propertyPath: m_Name
+      value: StageSelectBoard
+      objectReference: {fileID: 0}
+    - target: {fileID: 3265618144445924116, guid: 5979957e86be5c14e998bd4a94b66235,
+>>>>>>> Stashed changes
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -488,6 +584,7 @@ PrefabInstance:
       propertyPath: m_Text
       value: 16
       objectReference: {fileID: 0}
+<<<<<<< Updated upstream
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f2edb515cfa61f479eedea2dec5f01e, type: 3}
 --- !u!224 &338430090 stripped
@@ -3466,3 +3563,8 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1700443401}
   m_PrefabAsset: {fileID: 0}
+=======
+    m_RemovedComponents:
+    - {fileID: 3265618144064291202, guid: 5979957e86be5c14e998bd4a94b66235, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 5979957e86be5c14e998bd4a94b66235, type: 3}
+>>>>>>> Stashed changes
